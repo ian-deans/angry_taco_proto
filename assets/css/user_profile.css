@@ -1,0 +1,48 @@
+/* USER INFO */
+
+.user-profile-info-container {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.user-profile-img-container {
+  background-color: var(--main-primary-color);
+  padding: 4px;
+}
+
+.user-profile-img-container .user-profile-img {
+  height: 200px;
+}
+
+.user-profile-display-name {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ACTION BAR */
+
+.user-profile-actionbar-container {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.user-profile-actionbar-container .user-profile-actionbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.user-profile-actionbar-container .actionbar-button {
+  background-color: var(--main-primary-color);
+  border-color: var(--main-primary-color);
+  color: #0d0d0d;
+}
+
+/* USER STORY */
+
+.user-profile-story-container {
+  width: 95%;
+  padding: 1em;
+
+}
