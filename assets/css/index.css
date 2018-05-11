@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
-@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
 
 :root {
   --bg-white: #fdfdfd;
-  --bg-blue: #d5f5ff;
+  --bg-blue: #7de1ff;
   --font-blue: #9ce2f7;
   --secondary-color: #ffff8a;
 
   --font-style-heading: 'Lobster', cursive;
+  --font-style-main: 'Ubuntu', sans-serif;
 }
 
 a, a:active, a:visited, a:focus {
@@ -17,13 +18,15 @@ a, a:active, a:visited, a:focus {
 }
 
 body {
-  background-color: var(--bg-blue);
+  background: linear-gradient(var(--bg-white), var(--bg-blue) 50%);
+  font-family: var(--font-style-main);
 }
 
 .app-main-container {
   width: 100vw;
   min-width: 320px;
   height: auto;
+  min-height: 100vh;
   /* display: flex; */
   /* flex-direction: column; */
   align-items: center;
@@ -47,6 +50,13 @@ body {
   width: 100%;
 }
 
+.app-navbar {
+  display: flex;
+  align-items: center;
+}
+
+
+
 .app-title {
   color: var(--font-blue);
   font-size: 25px;
@@ -55,13 +65,27 @@ body {
   text-shadow: 2px 2px var(--bg-white);
 }
 .app-nav-button {
+  margin: 1em;
+  align-self: center;
+}
+.app-nav-button, .app-nav-button:active, .app-nav-button:focus {
   border: none;
+  outline: none;
 }
 .app-navbar-menu-button-img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
 }
+.app-navbar-link {
+  /* font-family: var(--font-style-heading); */
+  color: var(--font-blue);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 900;
+}
+
 
 
 
@@ -109,8 +133,8 @@ body {
   height: 320px;
   z-index: 2;
   border-radius: 50%;
-  box-shadow: 0px 0px 102px 47px var(--bg-white);
-  background-color: var(--bg-white);
+  /* box-shadow: 0px 0px 102px 47px var(--bg-white); */
+  /* background-color: var(--bg-white); */
 }
 
 
