@@ -11,6 +11,10 @@
   --font-style-main: 'Ubuntu', sans-serif;
 }
 
+p {
+  text-align: center;
+}
+
 a, a:active, a:visited, a:focus {
   text-decoration: none;
   margin: none;
