@@ -14,6 +14,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
   <link rel="stylesheet" href="./assets/css/index.css">
 
@@ -43,9 +44,25 @@
         <div class="app-login-container rounded-circle">
           <img class="login-sun-img" src="assets/images/sun-1.png">
           <div class="login-button-container rounded-circle">
-            <a href="home.html"><button class="login-button">Log In</button></a>
+            <a href="#"><button class="login-button">Log In</button></a>
           </div>
         </div>
+
+        <div id="login-modal">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Login</h5>
+              <form id="login-form">
+                <input name="name" placeholder="username" type="text" required>
+                <input name="password" type="password" placeholder="password" required> 
+                <input type="submit" value="Log In" class="btn">
+                <a id="login-link" href="home.html"></a>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
         
       </div>
 
@@ -53,6 +70,7 @@
 
 
   </div>
+  <script src="assets/js/script.js"></script>
 
 </body>
 

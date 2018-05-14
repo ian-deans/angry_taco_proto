@@ -119,7 +119,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  padding: 3em;
+  padding: 1em;
 
 }
 
@@ -187,6 +187,15 @@ body {
 .login-button-container button:hover, .login-button-container button:active {
   
   box-shadow: 0px 0px 19px 44px var(--secondary-color);
+}
+
+
+#login-modal {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
 }
 
 
