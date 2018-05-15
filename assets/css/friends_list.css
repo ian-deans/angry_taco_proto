@@ -1,5 +1,5 @@
 .friend-list-image-container {
-  margin-bottom: 1em;
+  margin-bottom: 0px;
 }
 
 .friend-list-user-thumbnail {
@@ -8,5 +8,27 @@
 }
 
 .friend-entry {
-  width: 200px;
+  margin-left: 1em;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  border: solid #0d0d0d 1px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+}
+
+.friend-entry a {
+  color: var(--main-font)
+}
+
+.friend-entry a span {
+  align-self: center;
+}
+
+@media (min-width: 600px) {
+  .friend-list-container {
+    /* width: 80%; */
+  }
 }

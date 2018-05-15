@@ -1,4 +1,6 @@
-(() => {
+$(window).on('load', () => {
+    console.log('Script loaded.')
+    console.log(window.location)
 
   const messageForm = $('#message-composition-form')
   let counter = 0
@@ -80,7 +82,10 @@
     "I am good how are you?",
     "Sorry but I have to go right now. I'll talk to you later!"
   ]
-})()
+
+
+
+})
 
 
 
