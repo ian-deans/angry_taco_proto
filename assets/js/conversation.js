@@ -45,6 +45,7 @@ $(window).on('load', () => {
     messageContainer.append(senderContainer)
   
     let messageContent = $('<div>')
+    messageContent.addClass('message-content')
   
     messageContent.text(content)
   
@@ -69,6 +70,8 @@ $(window).on('load', () => {
     messageContainer.append(senderContainer)
   
     let messageContent = $('<div>')
+    messageContent.addClass('message-content')
+   
   
     messageContent.text(responses[counter])
     counter++
